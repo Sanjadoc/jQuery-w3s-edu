@@ -1,2 +1,5 @@
 # jQuery-w3s-edu
-jQuery eductation w3s
+
+My Education JQuery on http://www.w3schools.com/jquery
+
+I used technology: HTML, CSS and JQuery.
