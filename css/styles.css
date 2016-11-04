@@ -1,0 +1,234 @@
+/*
+    My Custom CSS
+    =============
+    Author:  Oleksandr Grynivskyi
+    Updated: November 2016
+    Notes:	 For my Education JQuery
+*/
+
+
+body {
+    //background-color: #A2A6BF;
+/*
+    background: url(../img/bg.jpg) 100% 100% repeat-y; 
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+*/
+    background: linear-gradient(#a2daf0 50%, #81d6f8 50%);
+}
+
+#social-container {
+    position: fixed;
+    left: 0;
+    top: 45%;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 60px;
+    background-color: rgba(213, 221, 248, 0.7);
+    text-align: center;
+}
+
+#social-container a{
+    text-align: center;
+    display: block;
+    padding: 20px 20px;
+    float: left;
+}
+
+.header {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    background-color: #3F51B5;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 180px;
+    margin-top: 0 !important;
+    text-align: center;
+    color: aliceblue;
+}
+
+.menu {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 5px;
+   text-align: center;
+}
+
+.menu ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5566c6;
+    height: 60px;
+    line-height: 30px;
+}
+
+.menu li {
+    display: inline-block;  
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu .active a{
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.to_top_menu{
+    position:fixed;
+    top:0px;
+    width:100%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1000;
+    border-bottom: 1px solid #18568b;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.clear {
+    clear: both;    
+}
+
+.container {
+    margin: 0 auto;
+    //background-color: #8c85a2;
+}
+
+#conCenter {
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid  #2475a0;
+    margin-bottom: 10px;
+    background-color: #ffffff; 
+}
+
+#conCenter p {
+	text-indent: 1.5em;
+}
+
+#conCenter img {
+    text-align: center;
+    min-width: 400px;
+    min-height: 200px;
+    float: left;
+    padding: 15px;
+}
+
+#conCenter .forP {
+    text-align: left;
+}
+
+#conCenter h1 {
+    text-align: center;
+}
+
+#conCenter p {
+    font-size: 20px;
+}
+
+
+.future {
+    margin: 10px 0;    
+}
+
+.future, .future_test {
+    text-align: center;
+    display: block;
+}
+
+.future_test{
+    display:inline-block;
+    height: 100%;
+    width:21%;
+    margin: 5px 2px;
+    border: 3px solid  #2475a0;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+}
+
+.footer {
+    height: 300px;
+    margin-bottom: 5px;
+}
+
+.foot {
+    display: block;
+    height: 250px;
+    background-color: #3F51B5;
+}
+
+.copyright {
+    display: block;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    color: aliceblue;
+    background-color: #303F9F;
+    font-weight: 600;
+    line-height: 50px;    
+}
+
+
+/* Media Querys */
+@media screen and (max-width: 767px){
+    .header h1 {
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 80px;
+        padding-top: 30px;
+        margin-top: 0 !important;
+        text-align: center;
+        color: aliceblue;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    #social-container {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
