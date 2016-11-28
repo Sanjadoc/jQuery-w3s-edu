@@ -111,8 +111,9 @@ $(document).ready(function() {
     //Animate
     $(".active").click(function(){
         $(".test2").animate({
-             height: 'toggle'
-        });        
+             height: 'toggle';  
+        }); 
+        $(".menu").css("color", "red").slideUp(1000).slideDown(1000);
     });
     
 });
