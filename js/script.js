@@ -111,11 +111,23 @@ $(document).ready(function() {
     //Animate
     $(".active").click(function(){
         $(".test2").animate({
-             height: 'toggle';  
+             height: 'toggle'  
         }); 
         $(".menu").css("color", "red").slideUp(1000).slideDown(1000);
     });
     
+});
+
+
+
+//DOM
+$(document).ready(function(){
+    $(".fa-vk").click(function(){
+        alert("Value: " + $("#test").val());
+    });
+    $(".fa-odnoklassniki-square").click(function(){
+        alert($("#w3s").attr("href"));
+    });
 });
 
 
