@@ -100,6 +100,9 @@ $(document).ready(function() {
     $(".test3").fadeOut();
     $(".test3").fadeIn(4000);
     
+    $(".test4").fadeOut();
+    $(".test4").fadeIn(5000);
+    
     $(".future").fadeTo("slow", 0.7);
     
     //Slide
@@ -125,9 +128,27 @@ $(document).ready(function(){
     $(".fa-vk").click(function(){
         alert("Value: " + $("#test").val());
     });
+    
     $(".fa-odnoklassniki-square").click(function(){
         alert($("#w3s").attr("href"));
     });
+    
+    $(".fa-linkedin").click(function(){
+        $("#w3s").attr({
+            "href" : "http://www.w3schools.com/jquery",
+            "title" : "W3Schools jQuery Tutorial after click to in icon"
+        });
+        $("#w3s").text("W3Schools jQuery Tutorial after click to in icon");
+    });
+//    
+//     $(".fa-linkedin").click(function(){
+//        $("#w3s").attr("href", function(i, origText){
+//            return origText + "/jquery"; 
+//        });
+//    }); 
+    
 });
+    
+
 
 
