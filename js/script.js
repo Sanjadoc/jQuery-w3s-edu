@@ -147,6 +147,24 @@ $(document).ready(function(){
 //        });
 //    }); 
     
+    //add elements
+    $("#btn1").click(function(){
+        $("#p-append").append(" <i>Appended text</i>.");
+    });
+
+    $("#btn2").click(function(){
+        $("#list-item").prepend("<li>Prepended item</li>");
+    });
+    
+    $("#btn3").click(function(){
+        $("#btn3").remove();
+    });
+    
+    $("#btn4").click(function(){
+        $("#btn4").toggleClass("foot");
+        $("#btn3").css({"height":"100px", "width":"200px"});
+    });
+
 });
     
 
