@@ -164,7 +164,29 @@ $(document).ready(function(){
         $("#btn4").toggleClass("foot");
         $("#btn3").css({"height":"100px", "width":"200px"});
     });
+    
+    $(".test3").css("padding", "130px");
+});
 
+
+
+//jQuery Traversing
+$(document).ready(function(){
+    $("span").parents("p").css({"color": "blue", "border": "2px solid blue", "padding": "10px", "border-radius": "5px"});
+    
+    //$("span").parentsUntil("div").css("color", "yellow");
+    
+    $(".test2").children("p").css("color", "blue");
+    
+    $(".future").find("p").css("color", "blue");
+    
+    $("div").siblings("p").css("color", "red");
+    
+    $("div p").first("p").css("color", "red");
+    $("div p").last("p").css("color", "red");
+    $("div p").eq(3).css("color", "blue");
+    //$("p").filter(".intro");
+    //$("p").not(".intro");
 });
     
 
