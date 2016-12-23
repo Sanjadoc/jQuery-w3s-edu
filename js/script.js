@@ -188,6 +188,41 @@ $(document).ready(function(){
     //$("p").filter(".intro");
     //$("p").not(".intro");
 });
+
+
+//AJAX
+$(document).ready(function(){
+//    $(".btn-ajax").click(function(){
+//        $("#div1").load("js/demo_text.txt");
+//    });
+    
+    
+    $(".btn-ajax").click(function(){
+//        $("#div1").load("js/demo_text.txt", function(responseTxt, statusTxt, xhr){
+//            if(statusTxt == "success")
+//                alert("External content loaded successfully!");
+//            if(statusTxt == "error")
+//                alert("Error: " + xhr.status + ": " + xhr.statusText);
+//        });
+        
+        
+//        $.get("js/demo_test.asp", function(data, status){
+//            alert("Data: " + data + "\nStatus: " + status);
+//        });
+        
+        
+        $.post("js/demo_test_post.asp",
+        {
+            name: "Donald Duck",
+            city: "Duckburg"
+        },
+        function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });    
+        
+    });
+    
+});
     
 
 
