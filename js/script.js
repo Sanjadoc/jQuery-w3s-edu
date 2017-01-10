@@ -190,7 +190,7 @@ $(document).ready(function(){
 });
 
 
-//AJAX
+//AJAX - JQuery
 $(document).ready(function(){
 //    $(".btn-ajax").click(function(){
 //        $("#div1").load("js/demo_text.txt");
@@ -223,6 +223,34 @@ $(document).ready(function(){
     });
     
 });
+
+
+//AJAX 
+function loadDoc() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo-ajax").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "js/ajax_info.txt", true);
+  xhttp.send();
+}
+
+
+
+
+
+
+
+
     
 
 
