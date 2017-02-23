@@ -278,6 +278,49 @@ function ajaxTest() {
 };
 
 
+//Ajax 3
+function ajaxTestXml() {
+    
+    var xhttp;
+    
+    if (window.XMLHttpRequest) {
+        xhttp = new XMLHttpRequest();
+    } else {
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    
+    
+    xhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            myXMLfunction(this);
+        }
+    }
+    
+    xhttp.open("GET", 'js/cd_catalog.xml', true);
+    xhttp.send();
+    
+};
+
+
+function myXMLfunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Artist</th><th>Title</th><th>Country</th><th>Company</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +   
+    "</td><td>" +
+    x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue +   
+    "</td></tr>";
+  }
+  document.getElementById("demoXML").innerHTML = table;
+}
+
 
 
 

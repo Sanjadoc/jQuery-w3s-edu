@@ -152,6 +152,20 @@ body {
     font-size: 20px;
 }
 
+/*ajax*/
+#demoXML table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+
+#demoXML th,td {
+  padding: 3px;
+}
+
+#demoXML th {
+    background-color: #5566C6;
+}
+
 
 .future {
     margin: 10px 0;    
