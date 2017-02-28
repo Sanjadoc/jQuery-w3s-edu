@@ -301,7 +301,7 @@ function ajaxTestXml() {
     
 };
 
-
+//AjaxXML
 function myXMLfunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
@@ -322,7 +322,7 @@ function myXMLfunction(xml) {
 }
 
 
-
+// ajax exemple - https://www.w3schools.com/xml/ajax_examples.asp
 
 
 
