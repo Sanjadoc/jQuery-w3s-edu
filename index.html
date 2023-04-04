@@ -4,211 +4,274 @@
 <head>
     <meta charset="UTF-8">
     <title>JQuery education</title>
-    
+
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <link href="css/normalize5.0.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    
+
     <script>
         //AjaxPHP
         function showHint(str) {
-            if (str.length == 0) { 
+            if (str.length == 0) {
                 document.getElementById("txtHint").innerHTML = "";
                 return;
             } else {
                 var xmlhttp = new XMLHttpRequest();
-                xmlhttp.onreadystatechange = function() {
+                xmlhttp.onreadystatechange = function () {
                     if (this.readyState == 4 && this.status == 200) {
                         document.getElementById("txtHint").innerHTML = this.responseText;
                     }
                 };
-                //php
-                //xmlhttp.open("GET", "gethint.php?q=" + str, true);
-                //asp
                 xmlhttp.open("GET", "gethint.asp?q=" + str, true);
                 xmlhttp.send();
             }
         }
     </script>
-    
+
 </head>
 
 <body>
- 
+
     <div id="social-container">
         <a href="#"><i class="fa fa-vk fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-odnoklassniki-square fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
     </div>
-  
-  <div class="header">
-      <h1>My education Jquery LOGO</h1>
-  </div>
-  
-  <div class="menu" id="stick_menu">
-      <ul>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-      </ul>
-  </div>
-  
-  <div class="wrapper">
-      
-      <div class="container">
 
-          <div id="conCenter" class="test1">
-              <h1>Hello! My education Jquery</h1>   
+    <div class="header">
+        <h1>My education Jquery LOGO</h1>
+    </div>
 
-               <h2>Why do we use it?</h2>
-               
-               <p>Name: <input type="text" id="test" value="Test val html"></p>
-               
-               <p><a href="http://www.w3schools.com" id="w3s" title="w3s">W3Schools.com</a></p>
+    <div class="menu" id="stick_menu">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
 
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. <span>Many desktop</span>span> publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-               </p>  
-          </div>
+    <div class="wrapper">
 
-          <div id="conCenter" class="test2">
+        <div class="container">
+
+            <div id="conCenter" class="test1">
+                <h1>Hello! My education Jquery</h1>
+
+                <h2>Why do we use it?</h2>
+
+                <p>Name: <input type="text" id="test" value="Test val html"></p>
+
+                <p><a href="http://www.w3schools.com" id="w3s" title="w3s">W3Schools.com</a></p>
+
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. <span>Many desktop</span>span> publishing packages and web page editors now use
+                    Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
+                    still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                    sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
+
+            <div id="conCenter" class="test2">
                 <img src="img/1.jpg" width="400px" height="200px">
-                
-                 <p class="forP">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-               </p> 
-               <div class="clear"></div>
-                
-          </div>
-          
-          <div id="conCenter" class="test3">
-              <h1>Hello! My education Jquery</h1>   
 
-               <h2>Why do we use it?</h2>
+                <p class="forP">It is a long established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                    normal distribution of letters, as opposed to using 'Content here, content here', making it look
+                    like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                    their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                </p>
+                <div class="clear"></div>
 
-               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-               </p>  
-               
-               
-                <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+            </div>
+
+            <div id="conCenter" class="test3">
+                <h1>Hello! My education Jquery</h1>
+
+                <h2>Why do we use it?</h2>
+
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking
+                    at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                    letters,
+                    as opposed to using 'Content here, content here', making it look like readable English. Many desktop
+                    publishing
+                    packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                    'lorem ipsum'
+                    will uncover many web sites still in their infancy. Various versions have evolved over the years,
+                    sometimes by
+                    accident, sometimes on purpose (injected humour and the like).
+                </p>
+
+                <div id="div1">
+                    <h2>Let jQuery AJAX Change This Text</h2>
+                </div>
                 <button class="btn-ajax">Get External Content</button>
-               
-          </div>
-          
-          <div id="conCenter" class="test4">
-            
-            <p id="p-append">This is a paragraph.</p>
 
-            <ol id="list-item">
-              <li>List item 1</li>
-              <li>List item 2</li>
-              <li>List item 3</li>
-            </ol>
+            </div>
 
-            <button id="btn1">Append text</button>
-            <button id="btn2">Prepended list items</button>
-            <br>
-            <br>
-            <button id="btn3">Click me to remove</button>
-            <br>
-            <br>
-            <button id="btn4">Toggle CSS</button>
+            <div id="conCenter" class="test4">
 
-           
-            <p class="forP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla mattis turpis, at tincidunt felis dignissim sed. Suspendisse imperdiet rhoncus elit sit amet convallis. Pellentesque diam metus, commodo non porttitor nec, ultricies sit amet libero. Proin eleifend mauris turpis, at consequat augue viverra quis. Nunc ut interdum sapien, eget feugiat massa. Vivamus semper odio id lorem dictum, venenatis accumsan tortor scelerisque. Maecenas neque sem, rhoncus quis finibus id, ultricies in tellus. Nam aliquet feugiat hendrerit.
-           </p> 
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>  
-            <p>
-            Praesent scelerisque erat vel arcu bibendum, at rhoncus diam lacinia. Aliquam ac erat id magna malesuada lacinia dignissim in odio. Sed ante nulla, cursus mollis bibendum eget, pharetra id felis. Quisque eleifend condimentum libero, ut tincidunt ante tempus ac. Vestibulum a imperdiet nulla. Nam consectetur, sem ut rhoncus facilisis, nulla tortor egestas nisi, in iaculis ipsum velit eu sem. Nam auctor maximus semper. Vivamus mollis sapien sit amet ante finibus, in convallis dolor accumsan. Cras lacinia rhoncus faucibus. Donec accumsan non elit id blandit. Fusce a risus eget odio sagittis consequat ut at quam.
-           </p><p>
-            Aliquam consectetur pretium lorem vitae aliquam. Donec erat erat, faucibus vel massa vel, tincidunt semper nunc. Vivamus sodales dolor in felis mattis commodo. Quisque pharetra tempus sapien, ac aliquam felis facilisis et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac fringilla libero, non pharetra ante. Donec nec venenatis nibh, sit amet molestie mauris. Aliquam nisi eros, lacinia sit amet condimentum eu, venenatis ut ex. Quisque sodales eget nibh at semper. Duis eleifend, mauris eu venenatis commodo, metus turpis dapibus sapien, in efficitur ante orci eget nisi. Sed facilisis condimentum malesuada. In vestibulum et enim eu consequat. Nulla nec massa sed orci malesuada volutpat quis ac sapien. Praesent porta tristique accumsan.
-            </p><p>
-            Nullam tincidunt molestie lectus eget viverra. Proin a augue dictum, vestibulum ante sit amet, suscipit sem. Morbi a urna at est faucibus sagittis. Nulla gravida dictum sem, id ullamcorper tortor tincidunt id. In consequat leo a quam ultrices, at dictum nisi posuere. Ut a lectus auctor, accumsan odio sed, mollis nulla. Nullam et faucibus est, sed tempus erat. Aliquam eu iaculis dolor. Suspendisse eleifend dui lectus, vitae commodo quam tempor quis. Nullam a justo nisi. Donec finibus mauris sed suscipit eleifend. Vestibulum feugiat nunc et feugiat pharetra. Pellentesque laoreet vulputate nisi posuere facilisis. Nullam suscipit consectetur posuere.
-            </p><p>
-            Nulla facilisi. Pellentesque pellentesque, urna eu consequat interdum, purus sem suscipit elit, sed convallis lorem sem ut nibh. Morbi nec vulputate purus, tincidunt feugiat lectus. Suspendisse eu leo placerat, porttitor sapien in, pretium est. Vestibulum ultrices semper turpis ac congue. Proin eleifend convallis mauris. Nam interdum at est a volutpat.
-            </p>
-            
-            <hr>
-            <h3>The XMLHttpRequest Object</h3>
+                <p id="p-append">This is a paragraph.</p>
 
-            <p id="demo-ajax">Let AJAX change this text.</p>
+                <ol id="list-item">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ol>
 
-            <button type="button" onclick="loadDoc()">Change Content</button>
-            
+                <button id="btn1">Append text</button>
+                <button id="btn2">Prepended list items</button>
+                <br>
+                <br>
+                <button id="btn3">Click me to remove</button>
+                <br>
+                <br>
+                <button id="btn4">Toggle CSS</button>
 
-          </div>
-          
-          
-         <div id="conCenter" class="test5">
-           
-            <h3>The XMLHttpRequest Object</h3>
+                <p class="forP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla mattis
+                    turpis, at tincidunt felis dignissim sed. Suspendisse imperdiet rhoncus elit sit amet convallis.
+                    Pellentesque diam metus, commodo non porttitor nec, ultricies sit amet libero. Proin eleifend mauris
+                    turpis, at consequat augue viverra quis. Nunc ut interdum sapien, eget feugiat massa. Vivamus semper
+                    odio id lorem dictum, venenatis accumsan tortor scelerisque. Maecenas neque sem, rhoncus quis
+                    finibus id, ultricies in tellus. Nam aliquet feugiat hendrerit.
+                </p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                </p>
+                <p>
+                    Praesent scelerisque erat vel arcu bibendum, at rhoncus diam lacinia. Aliquam ac erat id magna
+                    malesuada lacinia dignissim in odio. Sed ante nulla, cursus mollis bibendum eget, pharetra id felis.
+                    Quisque eleifend condimentum libero, ut tincidunt ante tempus ac. Vestibulum a imperdiet nulla. Nam
+                    consectetur, sem ut rhoncus facilisis, nulla tortor egestas nisi, in iaculis ipsum velit eu sem. Nam
+                    auctor maximus semper. Vivamus mollis sapien sit amet ante finibus, in convallis dolor accumsan.
+                    Cras lacinia rhoncus faucibus. Donec accumsan non elit id blandit. Fusce a risus eget odio sagittis
+                    consequat ut at quam.
+                </p>
+                <p>
+                    Aliquam consectetur pretium lorem vitae aliquam. Donec erat erat, faucibus vel massa vel, tincidunt
+                    semper nunc. Vivamus sodales dolor in felis mattis commodo. Quisque pharetra tempus sapien, ac
+                    aliquam felis facilisis et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac
+                    fringilla libero, non pharetra ante. Donec nec venenatis nibh, sit amet molestie mauris. Aliquam
+                    nisi eros, lacinia sit amet condimentum eu, venenatis ut ex. Quisque sodales eget nibh at semper.
+                    Duis eleifend, mauris eu venenatis commodo, metus turpis dapibus sapien, in efficitur ante orci eget
+                    nisi. Sed facilisis condimentum malesuada. In vestibulum et enim eu consequat. Nulla nec massa sed
+                    orci malesuada volutpat quis ac sapien. Praesent porta tristique accumsan.
+                </p>
+                <p>
+                    Nullam tincidunt molestie lectus eget viverra. Proin a augue dictum, vestibulum ante sit amet,
+                    suscipit sem. Morbi a urna at est faucibus sagittis. Nulla gravida dictum sem, id ullamcorper tortor
+                    tincidunt id. In consequat leo a quam ultrices, at dictum nisi posuere. Ut a lectus auctor, accumsan
+                    odio sed, mollis nulla. Nullam et faucibus est, sed tempus erat. Aliquam eu iaculis dolor.
+                    Suspendisse eleifend dui lectus, vitae commodo quam tempor quis. Nullam a justo nisi. Donec finibus
+                    mauris sed suscipit eleifend. Vestibulum feugiat nunc et feugiat pharetra. Pellentesque laoreet
+                    vulputate nisi posuere facilisis. Nullam suscipit consectetur posuere.
+                </p>
+                <p>
+                    Nulla facilisi. Pellentesque pellentesque, urna eu consequat interdum, purus sem suscipit elit, sed
+                    convallis lorem sem ut nibh. Morbi nec vulputate purus, tincidunt feugiat lectus. Suspendisse eu leo
+                    placerat, porttitor sapien in, pretium est. Vestibulum ultrices semper turpis ac congue. Proin
+                    eleifend convallis mauris. Nam interdum at est a volutpat.
+                </p>
 
-            <p id="demo-ajax2">Let AJAX change this text - 2.</p>
+                <hr>
+                <h3>The XMLHttpRequest Object</h3>
 
-            <button type="button" onclick="ajaxTest()">Change Content</button>
-            
-            <p class="forP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla mattis turpis, at tincidunt felis dignissim sed. Suspendisse imperdiet rhoncus elit sit amet convallis. Pellentesque diam metus, commodo non porttitor nec, ultricies sit amet libero. Proin eleifend mauris turpis, at consequat augue viverra quis. Nunc ut interdum sapien, eget feugiat massa. Vivamus semper odio id lorem dictum, venenatis accumsan tortor scelerisque. Maecenas neque sem, rhoncus quis finibus id, ultricies in tellus. Nam aliquet feugiat hendrerit.
-           </p> 
-           
-            <button type="button" onclick="ajaxTestXml()">Get my CD collection</button>
-            <br><br>
-            <table id="demoXML"></table>
-           
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>  
-            
-            <p><b>Start typing a name in the input field below:</b></p>
-            <form> 
-                First name: <input type="text" onkeyup="showHint(this.value)">
-            </form>
-            <p>Suggestions: <span id="txtHint"></span></p>
-            
-          </div>
-         
-          
+                <p id="demo-ajax">Let AJAX change this text.</p>
+
+                <button type="button" onclick="loadDoc()">Change Content</button>
+            </div>
+
+
+            <div id="conCenter" class="test5">
+
+                <h3>The XMLHttpRequest Object</h3>
+
+                <p id="demo-ajax2">Let AJAX change this text - 2.</p>
+
+                <button type="button" onclick="ajaxTest()">Change Content</button>
+
+                <p class="forP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla mattis
+                    turpis, at tincidunt felis dignissim sed. Suspendisse imperdiet rhoncus elit sit amet convallis.
+                    Pellentesque diam metus, commodo non porttitor nec, ultricies sit amet libero. Proin eleifend mauris
+                    turpis, at consequat augue viverra quis. Nunc ut interdum sapien, eget feugiat massa. Vivamus semper
+                    odio id lorem dictum, venenatis accumsan tortor scelerisque. Maecenas neque sem, rhoncus quis
+                    finibus id, ultricies in tellus. Nam aliquet feugiat hendrerit.
+                </p>
+
+                <button type="button" onclick="ajaxTestXml()">Get my CD collection</button>
+                <br><br>
+                <table id="demoXML"></table>
+
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                </p>
+
+                <p><b>Start typing a name in the input field below:</b></p>
+                <form>
+                    First name: <input type="text" onkeyup="showHint(this.value)">
+                </form>
+                <p>Suggestions: <span id="txtHint"></span></p>
+
+            </div>
+        </div>
+
+        <div class="future">
+            <div class="future_test">
+                <p>It is a long established fact that a reader...</p>
+            </div>
+
+            <div class="future_test">
+                <p>It is a long established fact that a reader...</p>
+            </div>
+
+            <div class="future_test">
+                <p>It is a long established fact that a reader...</p>
+            </div>
+            <div class="future_test">
+                <p>It is a long established fact that a reader...</p>
+            </div>
+        </div>
+
     </div>
-      
-    <div class="future">
-        <div class="future_test">
-           <p>It is a long established fact that a reader...</p>  
+
+    <div class="clear"></div>
+
+    <div class="footer">
+        <div class="foot">
+
         </div>
-        
-        <div class="future_test">
-             <p>It is a long established fact that a reader...</p>  
-        </div>
-        
-        <div class="future_test">
-            <p>It is a long established fact that a reader...</p>  
-        </div>
-        <div class="future_test">
-             <p>It is a long established fact that a reader...</p>  
+        <div class="copyright">
+            Copyright © 2016. Education JQuery! Alex Green.
         </div>
     </div>
-     
-  </div>  
-  
-  <div class="clear"></div>
-  
-  <div class="footer">
-      <div class="foot">
-          
-      </div>
-      <div class="copyright">
-          Copyright © 2016. Education JQuery! Alex Green.
-      </div>
-  </div>
-  
 
-   <!-- If CDN fails to load, serve up the local version -->
-   <!--<script>window.jQuery || document.write('<script src="js/jquery-1.12.4.js"><\/script>');</script>-->
-   
-   <!-- Load the CDN first -->
-   <script src="js/jquery-1.12.4.js"></script> 
-   
-   <!-- Costum script -->
-   <script src="js/script.js"></script>
-   
+    <!-- If CDN fails to load, serve up the local version -->
+    <!--<script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>');</script>-->
+
+    <!-- Load the CDN first -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Costum script -->
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>

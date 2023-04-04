@@ -2,4 +2,4 @@
 
 My Education JQuery on http://www.w3schools.com/jquery
 
-I used technology: HTML, CSS and JQuery.
+I used technology: HTML, CSS, JQuery, NPM

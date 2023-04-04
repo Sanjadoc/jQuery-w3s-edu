@@ -46,26 +46,9 @@ $(document).ready(function() {
         else $('#stick_menu').removeClass('to_top_menu');
     });
     
-    
-    
     $(".test2 img").dblclick(function(){
         $(this).hide();
     });
-    
-//    $(".test2 img").mouseenter(function(){
-//       alert("Hello");
-//    });
-//    
-//    $(".test2 img").mouseleave(function(){
-//        alert("Bye!");
-//    });
-    
-//    $(".test2 img").hover(function(){
-//        alert("Hello!");
-//    },
-//    function(){
-//        alert("Bye!");
-//    });
     
     $(".header h1").on({
         mouseenter: function(){
@@ -81,7 +64,6 @@ $(document).ready(function() {
         }
     });
     
-    
     $("p,h1, h2, h3").click(function() {
         $(this).hide(1000);
     });
@@ -89,7 +71,6 @@ $(document).ready(function() {
     $(".menu li").click(function(){
         $(".test1").toggle(1000);
     });
-    
     
     $(".test1").fadeOut();
     $(".test1").fadeIn(2000);
@@ -109,7 +90,6 @@ $(document).ready(function() {
     $(".copyright").click(function(){
         $(".future").slideToggle("slow");
     });
-    
     
     //Animate
     $(".active").click(function(){
@@ -140,13 +120,7 @@ $(document).ready(function(){
         });
         $("#w3s").text("W3Schools jQuery Tutorial after click to in icon");
     });
-//    
-//     $(".fa-linkedin").click(function(){
-//        $("#w3s").attr("href", function(i, origText){
-//            return origText + "/jquery"; 
-//        });
-//    }); 
-    
+
     //add elements
     $("#btn1").click(function(){
         $("#p-append").append(" <i>Appended text</i>.");
@@ -173,9 +147,7 @@ $(document).ready(function(){
 //jQuery Traversing
 $(document).ready(function(){
     $("span").parents("p").css({"color": "blue", "border": "2px solid blue", "padding": "10px", "border-radius": "5px"});
-    
-    //$("span").parentsUntil("div").css("color", "yellow");
-    
+        
     $(".test2").children("p").css("color", "blue");
     
     $(".future").find("p").css("color", "blue");
@@ -185,32 +157,12 @@ $(document).ready(function(){
     $("div p").first("p").css("color", "red");
     $("div p").last("p").css("color", "red");
     $("div p").eq(3).css("color", "blue");
-    //$("p").filter(".intro");
-    //$("p").not(".intro");
 });
 
 
 //AJAX - JQuery
 $(document).ready(function(){
-//    $(".btn-ajax").click(function(){
-//        $("#div1").load("js/demo_text.txt");
-//    });
-    
-    
     $(".btn-ajax").click(function(){
-//        $("#div1").load("js/demo_text.txt", function(responseTxt, statusTxt, xhr){
-//            if(statusTxt == "success")
-//                alert("External content loaded successfully!");
-//            if(statusTxt == "error")
-//                alert("Error: " + xhr.status + ": " + xhr.statusText);
-//        });
-        
-        
-//        $.get("js/demo_test.asp", function(data, status){
-//            alert("Data: " + data + "\nStatus: " + status);
-//        });
-        
-        
         $.post("js/demo_test_post.asp",
         {
             name: "Donald Duck",
@@ -231,10 +183,10 @@ function loadDoc() {
     var xhttp;
     
     if (window.XMLHttpRequest) {
-    // code for modern browsers
+        // code for modern browsers
         xhttp = new XMLHttpRequest();
     } else {
-    // code for IE6, IE5
+        // code for IE6, IE5
         xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
     
@@ -246,10 +198,6 @@ function loadDoc() {
     
     xhttp.open("GET", "js/ajax_info.txt", true);
     xhttp.send();
-
-    //xhttp.open("POST", "js/ajax_demo.asp", true);
-    //xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    //xhttp.send("fname=Henry&lname=Ford");    
 };
 
 
@@ -259,10 +207,10 @@ function ajaxTest() {
     var xhttp;
     
     if (window.XMLHttpRequest) {
-    // code for modern browsers
+        // code for modern browsers
         xhttp = new XMLHttpRequest();
     } else {
-    // code for IE6, IE5
+        // code for IE6, IE5
         xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
     
@@ -288,7 +236,6 @@ function ajaxTestXml() {
     } else {
         xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    
     
     xhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
@@ -320,13 +267,3 @@ function myXMLfunction(xml) {
   }
   document.getElementById("demoXML").innerHTML = table;
 }
-
-
-// ajax exemple - https://www.w3schools.com/xml/ajax_examples.asp
-
-
-
-    
-
-
-

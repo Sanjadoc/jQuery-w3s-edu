@@ -1,0 +1,7 @@
+{
+  "name": "W3S Edu",
+  "version": "1.1",
+  "devDependencies": {
+    "jquery": "^3.6.4"
+  }
+}
